@@ -26,7 +26,8 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
+				<classifier>mule-application</classifier>
+                </configuration>
 			</plugin>
 		<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -86,7 +87,7 @@
 							<username>${anypoint.username}</username>
 							<password>${anypoint.password}</password>
 							<workerType>Micro</workerType>
-							<applicationName>craft-usermgtrestservicesdev</applicationName>
+							<applicationName>craft-usermgtmule-dev</applicationName>
 							<environment>Sandbox</environment>
 							<properties>
 							          	<https.port>1443</https.port>
